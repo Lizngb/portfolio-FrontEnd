@@ -11,31 +11,202 @@
         <link href="Assets/Css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-"></nav>
-        <nav class="navbar" style="background-color: #0f0f0fd5;">
+        <header>
+        <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="Assets/Img/APLogo.png" alt="" width="20%" height="aut">
+              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
+                <img src="Assets/Img/APLogo.png" width="11%">
               </a>
-              <div id="icons-container-right">
-                <a href="" target="_blank">
+            <div id="icons-container-right">
+                <a href="https://www.facebook.com/Liza.Gonzalez.Brizuela" target="_blank">
                     <div class="icon icon-facebook"></div>
                 </a>
-                </a>                  
-                <a href="" target="_blank">
-                    <div class="icon icon-dribbble"></div>
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/liz.ngb/?hl=es" target="_blank">
+                    <div class="icon icon-instagram"></div>
+                </a>                    
+                <a href="https://www.linkedin.com/in/lizaura-gonzalez-brizuela-862b6ba7/">
                     <div class="icon icon-linkedin"></div>
-                </a>                   
-                <a href="">
-                    <div class="icon icon-last icon-email"></div>
                 </a>
-            </div>
-            </div>
-          </nav>
+    <!-- Button trigger modal -->
+        <button type="button" class="icon icon-login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        </button>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="lizan.gonzalezb@gmail.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+</header>
+<main>
+  <article>
+    <section>
+    <div class="card">
+      <img src="Assets/Img/banner-4.png" class="card-img-top";>    
+      <div class="capa">
+  <!-- Button trigger modal -->
+  <button type="button" class="profile-photo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cambiar foto de perfil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="mb-3">
+                  <label for="formFile" class="form-label"></label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container-resumen">
+        <div class="row">
+          <div class="col1">
+          </div>
+          <div class="col2">
+          <!-- Button trigger modal -->
+          <button type="button" class="buttom-edit" data-bs-toggle="modal" data-bs-target="#edit-resumen">
+          </button>
+<!-- Modal -->
+<div class="modal fade" id="edit-resumen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Editar presentación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ocupación</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Acerca de mi</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+        <div class="row">
+          <div class="col">
+            <div class="name-text-container">
+            <p>Lizaura Gonzalez Brizuela</p>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col">
+          <div class="ocupacion-text-container">
+            <p>Desarrollador Full Stack Jr.<p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-text-container">
+          <p> Además de estudiante de #ArgentinaPrograma para desarrollador Full Stack, estoy cursando el último tramo de la Licenciatura en Administración de Empresas en la Universidad de Lomas de Zamora.</p>
+        </div>
+        </div>
+      </div>        
+  </section>
+</article>
+<article>
+  <section>
+  <div class="experiencia-conteiner">
+  <div class="container-text-center">
+    <div class="row"> 
+    <div class="container-tittle"
+      <p>Experiencia</p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col1">
+      </div>
+      <div class="col2">
+      <!-- Button trigger modal -->
+      <button type="button" class="buttom-edit" data-bs-toggle="modal" data-bs-target="#edit-experiencia-1">
+      </button>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-4"> <img src="assets/Img/mba-systems.gif" style="margin-left: 40px; margin-bottom: 30px; align-content: center;"></div>
+     <div class="col-8">
+      <div class="experiencia-conteiner-tittle">
+        <p>Analista Sr. en área de Cumplimiento Normativo</p>
+      </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col1">
+    </div>
+    <div class="col2">
+    <!-- Button trigger modal -->
+    <button type="button" class="buttom-edit" data-bs-toggle="modal" data-bs-target="#edit-experiencia-1">
+    </button>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-4"> <img src="assets/Img/logo_coca.png" style="margin-left: 40px; margin-bottom: 30px; align-content: center;"></div>
+     <div class="col-8">
+      <div class="experiencia-conteiner-tittle">
+        <p> Asesor comercial y ventas </p>
+      </div> 
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+</article>
 
-        <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </body>
+</main>
+</body>
 </html>
+  
+    
+  
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
